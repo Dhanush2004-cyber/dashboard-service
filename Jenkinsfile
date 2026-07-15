@@ -26,7 +26,7 @@ pipeline {
                                         execCommand: '''
                                             set -e
 
-                                            echo "===== LOGIN SERVICE DEPLOYMENT STARTED ====="
+                                            echo "===== DASHBOARD SERVICE DEPLOYMENT STARTED ====="
 
                                             cd /home/master/project/microservices/dashboard-service
 
