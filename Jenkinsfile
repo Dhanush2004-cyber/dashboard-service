@@ -35,7 +35,8 @@ pipeline {
 
                                     sshTransfer(
 
-                                        execCommand: '''
+                                        execCommand: """
+
                                             set -e
 
                                             echo "Selected Branch : ${params.BRANCH}"
@@ -62,29 +63,51 @@ pipeline {
                                             pm2 save
 
                                             echo "===== DASHBOARD SERVICE DEPLOYED SUCCESSFULLY ====="
-                                        '''
+
+                                            """
+
                                     )
+
                                 ]
+
                             )
+
                         ]
+
                     )
+
                 }
+
             }
+
         }
+
     }
+
     post {
+
         success {
+
             echo "======================================"
             echo "Dashboard Service Deployment Successful"
             echo "======================================"
+
         }
+
         failure {
+
             echo "======================================"
             echo "Dashboard Service Deployment Failed"
             echo "======================================"
+
         }
+
         always {
+
             cleanWs()
+
         }
+
     }
+
 }
