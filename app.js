@@ -35,7 +35,7 @@ app.get("/api/dashboard", (req, res) => {
 
             completedOrders: 308,
 
-            branch: main
+            branch: "main"
 
         }
 
