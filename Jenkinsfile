@@ -36,7 +36,7 @@ pipeline {
 
                                             npm install
 
-                                            if pm2 describe login-service > /dev/null 2>&1
+                                            if pm2 describe dashboard-service > /dev/null 2>&1
                                             then
                                                 pm2 restart dashboard-service
                                             else
