@@ -25,7 +25,7 @@ app.get("/api/dashboard", (req, res) => {
 
         dashboard: {
 
-            totalUsers: 1500,
+            totalUsers: 2000,
 
             totalOrders: 320,
 
